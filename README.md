@@ -1,5 +1,5 @@
 
-```toml
+```
 C:\Users\admin\Desktop\socks5-test>socks5_speedtest.exe -p "socks5://admin:pass@127.0.0.1:1080"
 [*] 解析代理地址: socks5://admin:pass@127.0.0.1:1080
 
