@@ -1,0 +1,19 @@
+[package]
+name = "socks5_speedtest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 命令行参数解析
+clap = { version = "4.4", features = ["derive"] }
+
+# 异步运行时 (提供 TCP/UDP 及定时器功能)
+tokio = { version = "1", features = ["full"] }
+
+# URL 解析库 (用于解析 socks5://... 格式)
+url = "2.4"
+
+# 底层 Socket 选项配置 (用于开启 TCP Keep-Alive)
+socket2 = "0.5"
